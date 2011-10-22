@@ -10,7 +10,7 @@ I live just outside KUSC's broadcast area, and wanted an easy way to tune in whi
 
 This app is not in any way affiliated with or endorsed by KUSC.
 
-**KUSC Wesbite**: http://www.kusc.org/
+**KUSC Wesbite**: http://www.kusc.org/  
 **Donate**: http://kuscinteractive.org/donate/
 
 ## Install
