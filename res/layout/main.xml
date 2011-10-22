@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	>
+	<ImageView
+	    android:layout_centerHorizontal="true"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="20dp"
+	    android:layout_width="wrap_content"
+	    android:src="@drawable/logo"
+	    />
+
+	<RelativeLayout
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:layout_alignParentBottom="true"
+	    >
+
+        <TextView
+            android:id="@+id/show"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_width="fill_parent"
+            android:textColor="#000000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="@string/show"
+            />
+        <TextView
+            android:id="@+id/song"
+            android:layout_below="@id/show"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_width="fill_parent"
+            android:textColor="#990000"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:text="@string/song"
+            />
+
+		<TableLayout
+		    android:id="@+id/controls"
+		    android:layout_below="@id/song"
+		    android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+		    android:stretchColumns="1"
+		    >
+		    <TableRow>
+				<ImageButton
+					android:id="@+id/buttonMediaControl"
+					android:layout_centerVertical="true"
+					android:layout_height="wrap_content"
+					android:layout_margin="10dp"
+					android:layout_width="wrap_content"
+					android:onClick="togglePlayPause"
+					android:src="@drawable/button_play"
+					/>
+				<SeekBar
+					android:id="@+id/volumeSlider"
+					android:layout_centerVertical="true"
+					android:layout_height="wrap_content"
+					android:layout_margin="10dp"
+					android:layout_width="fill_parent"
+					/>
+			</TableRow>
+		</TableLayout>
+    </RelativeLayout>
+	
+</RelativeLayout>

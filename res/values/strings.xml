@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">KUSC</string>
+
+    <string name="donate">Donate</string>
+    <string name="about">About</string>
+    <string name="quit">Quit</string>
+    
+    <string name="song">[song]</string>
+    <string name="show">[show]</string>
+</resources>
