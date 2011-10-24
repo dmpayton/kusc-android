@@ -108,7 +108,6 @@ public class StreamProxy implements Runnable {
     }
   }
 
-  @Override
   public void run() {
     Log.d(LOG_TAG, "running");
     while (isRunning) {

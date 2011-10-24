@@ -4,10 +4,10 @@
         android:id="@+id/menuDonate"
         android:title="@string/donate"
         />
-    <item
+    <!--<item
         android:id="@+id/menuAbout"
         android:title="@string/about"
-        />
+        />-->
     <item
         android:id="@+id/menuQuit"
         android:title="@string/quit"
