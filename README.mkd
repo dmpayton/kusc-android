@@ -1,8 +1,11 @@
 # kusc-android
 
+### http://kusc.dmpayton.com
+
 * **Author**: [Derek Payton](http://dmpayton.com)
 * **License**: MIT
-* **Android Version**: 2.2 Froyo
+* **Target Android Version**: 2.1 Eclair
+* **Download**: http://kusc.dmpayton.com/KUSCPlayer.apk
 
 KUSC is a listener-supported classical radio station based out of the University of Southern California.
 
@@ -15,7 +18,7 @@ This app is not in any way affiliated with or endorsed by KUSC.
 
 ## Install
 
-### http://dmpayton.com/KUSCPlayer.apk
+### http://kusc.dmpayton.com/KUSCPlayer.apk
 
 To install, simply download and open the APK on your Android phone and follow the installation instructions.
 
@@ -23,5 +26,4 @@ Given that the official KUSC Android app is nearing completion, this app will li
 
 ## Issues / Todo
 
-* The song and show name are not displayed (How can I get this from the MP3 stream? Maybe scrape it from the site?)
-* The "Donate" and "About" menu items do not work and are not yet implemented.
+* Music does not pause when a phone call comes in
