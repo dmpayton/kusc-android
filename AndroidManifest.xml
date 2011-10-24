@@ -3,8 +3,8 @@
       package="com.dmpayton.kusc"
       android:versionCode="1"
       android:versionName="1.0">
-    <uses-sdk android:minSdkVersion="7" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="8" />
 
     <application android:icon="@drawable/icon" android:label="@string/app_name" android:debuggable="true">
         <activity

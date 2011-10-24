@@ -33,6 +33,7 @@ public class PlayerActivity extends Activity implements Runnable, ServiceConnect
 	
     private static final String TAG = "KUSCActivity";
     private static String DONATE_URL = "http://kuscinteractive.org/donate";
+    private static String ABOUT_URL = "http://kusc.dmpayton.com";
     boolean isBound = false;
     boolean isLoading = false;
 
@@ -106,8 +107,10 @@ public class PlayerActivity extends Activity implements Runnable, ServiceConnect
 			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(DONATE_URL));
 			startActivity(browserIntent);
 			return true;
-		/* } else if (item.getItemId() == R.id.menuAbout) {
-			return true;*/
+		 } else if (item.getItemId() == R.id.menuAbout) {
+			Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(ABOUT_URL));
+			startActivity(browserIntent);
+			return true;
 		} else if (item.getItemId() == R.id.menuQuit) {
 			doQuit();
 			return true;

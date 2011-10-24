@@ -75,6 +75,10 @@ public class PlayerService extends Service implements OnBufferingUpdateListener,
 	public void onDestroy() {
 		Log.i(TAG, "Service closing");
 		killMediaPlayer();
+		if(notificationManager != null) {
+			notificationManager.cancel(NOTIFICATION_ID);
+		}
+		timer.cancel();
 		super.onDestroy();
 	}
 	
