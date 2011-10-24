@@ -185,13 +185,24 @@ public class PlayerService extends Service implements OnBufferingUpdateListener,
 
 			try {
 				JSONObject show = data.getJSONObject("show");
-				updatedShow = show.getString("title");
-				updatedSong = show.getString("sub_title");
+				updatedShow = show.getString("title") + " " + show.getString("sub_title");
+				updatedSong = "";
+				try {
+					JSONObject track = data.getJSONObject("track");
+					try{ updatedSong += track.getString("composer") + ": "; } catch (JSONException e) {}
+					try{ updatedSong += " " + track.getString("title"); } catch (JSONException e) {}
+					try{ updatedSong += " " + track.getString("in_key"); } catch (JSONException e) {}
+					try{ updatedSong += " " + track.getString("opus"); } catch (JSONException e) {}
+					try{ updatedSong += " " + track.getString("catalog"); } catch (JSONException e) {}
+				} catch (JSONException e) {
+					Log.e(TAG, "Error building track.");
+					e.printStackTrace();
+				}
 			} catch (JSONException e) {
 				updatedShow = "Error retrieving track info.";
 				updatedSong = "";
 			}
-			if(currentSong != updatedSong){
+			if(currentShow != updatedShow || currentSong != updatedSong){
 				currentShow = updatedShow;
 				currentSong = updatedSong;
 				notification.setLatestEventInfo(getApplicationContext(), (CharSequence) currentShow, (CharSequence) currentSong, contentIntent);

@@ -1,19 +1,5 @@
 package com.dmpayton.kusc;
 
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.net.URLConnection;
-import java.util.Timer;
-import java.util.TimerTask;
-
-import org.apache.http.util.ByteArrayBuffer;
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-
 import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
@@ -55,7 +41,6 @@ public class PlayerActivity extends Activity implements Runnable, ServiceConnect
     private PlayerService mService;
     private SeekBar volumeSlider;
     private Handler handler = new Handler();
-    private Timer timer = new Timer();
 	
     
     /*
