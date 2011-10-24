@@ -131,7 +131,7 @@ public class PlayerService extends Service implements OnBufferingUpdateListener,
 	}
 
 	public void onBufferingUpdate(MediaPlayer mp, int percent) {
-		Log.i(TAG, "onBufferingUpdate(" + mp + ", " + percent + ")");
+		//Log.i(TAG, "onBufferingUpdate(" + mp + ", " + percent + ")");
 	}
 	
 	public boolean onError(MediaPlayer mp, int what, int extra) {
