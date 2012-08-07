@@ -1,24 +1,28 @@
+**[GET THE OFFICIAL CLASSICAL KUSC ANDROID APP.](https://play.google.com/store/apps/details?id=org.kusc.radio)**
+
+-----
+
 # kusc-android
 
-### http://kusc.dmpayton.com
+### http://dmpayton.com/pages/kusc-android.html
 
 * **Author**: [Derek Payton](http://dmpayton.com)
 * **License**: MIT
 * **Target Android Version**: 2.1 Eclair
-* **Download**: http://kusc.dmpayton.com/KUSCPlayer.apk
+* **Download**: http://dmpayton.com/static/files/KUSCPlayer.apk
 
 KUSC is a listener-supported classical radio station based out of the University of Southern California.
 
 I live just outside KUSC's broadcast area, and wanted an easy way to tune in while not at my computer. This is my first Android app, and the result of some spare-time hacking. It's still very much a work-in-progress, but it does play the stream.
 
-This app is not in any way affiliated with or endorsed by KUSC.
+**This app is not in any way affiliated with or endorsed by KUSC.**
 
 **KUSC Wesbite**: http://www.kusc.org/  
 **Donate**: http://kuscinteractive.org/donate/
 
 ## Install
 
-### http://kusc.dmpayton.com/KUSCPlayer.apk
+### http://dmpayton.com/static/files/KUSCPlayer.apk
 
 To install, simply download and open the APK on your Android phone and follow the installation instructions.
 
